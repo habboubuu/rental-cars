@@ -1,0 +1,108 @@
+.CarDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.details-items h1{
+    color: #04248a;
+    font-size: 2rem;
+    font-size: 500;
+    margin-bottom: .8rem;
+}
+.imgdetails img{
+    width: 400px;
+}
+.price-stars{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    margin-bottom: .8rem;
+}
+.details-items h4{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #222;
+}
+.price-stars i{
+    color: var(--color6);
+}
+.price-stars .starsicons{
+    margin-right: .3rem;
+
+}
+
+.details-items p{
+    width: 550px;
+    margin-bottom: .8rem;
+}
+.caroptions{
+    display: grid;
+    grid-template-columns: repeat(3, 160px);
+}
+
+.caroptions i{
+    color: var(--color1);
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+@media screen and (max-width:1007px){
+    .CarDetails{
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .details-items{
+        width: 100%;
+    }
+    .details-items p{
+        width: 100%;
+    }
+}
+@media screen and (max-width:530px){
+    .imgdetails img{
+        width: 300px;
+    }
+    .caroptions{
+        display: grid;
+        grid-template-columns: repeat(3, 140px);
+    }
+}
+@media screen and (max-width:470px){
+    .caroptions{
+        grid-template-columns: repeat(2, 150px);
+    }
+    .price-stars{
+        column-gap: 1rem;
+    }
+}
+@media screen and (max-width:400px){
+    .price-stars{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        column-gap: 2rem;
+        margin-bottom: .8rem;
+    }
+}
+@media screen and (max-width:349px){
+    .CarDetails{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .caroptions{
+        grid-template-columns: repeat(2, 130px);
+    }
+}
+@media screen and (max-width:318px){
+    .imgdetails img{
+        width: 220px;
+    }
+    .caroptions{
+        grid-template-columns: repeat(1, 110px);
+        justify-content: center;
+    }
+    .caroptions span{
+        font-size: .75rem;
+    }
+}

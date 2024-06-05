@@ -1,0 +1,103 @@
+.containerapp{
+    background: linear-gradient(rgb(24, 121, 202, 0.4),rgb(24, 121, 202, 0.4)), url(../Assets/all-images/drive.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Appsdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 6rem;
+    width: 100%;
+    padding: 2rem 5rem;
+}
+.itemapp{
+    width: 50%;
+}
+
+.itemapp h1{
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.section_descriptionapp{
+    color: rgb(228, 228, 228);
+    margin-bottom: 2rem;
+    font-size: .9rem;
+    line-height: 30px;
+    text-align: center;
+}
+
+.imgdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+.imgdown img{
+    width: 200px;
+    cursor: pointer;
+
+}
+.phoneimg img{
+    width: 220px;
+    height: 450px;
+}
+
+@media screen and (max-width:900px){
+    .Appsdown{
+        justify-content: center;
+        gap: 4rem;
+        width: 100%;
+        padding: 2rem 2rem;
+    }
+    .itemapp h1{
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .imgdown{
+        column-gap: 1.5rem;
+    }
+    .imgdown img{
+        width: 150px;
+        cursor: pointer;
+    
+    }
+    .phoneimg img{
+        width: 200px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:620px){
+    .phoneimg{
+        display: none;
+    }
+    .itemapp{
+        width: 100%;
+    }
+    .itemapp h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:420px){
+    .itemapp h1{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .imgdown{
+        column-gap: 1rem;
+    }
+    .imgdown img{
+        width: 110px;
+        cursor: pointer;
+    }
+    .Appsdown{
+        padding: 2rem 1rem;
+    }
+}

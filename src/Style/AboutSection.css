@@ -1,0 +1,121 @@
+.AboutSection{
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+.flexdiv{
+    display: flex;  
+    column-gap: 5rem;
+}
+
+.imgdiv img{
+    width: 450px;
+}
+.aboutContentdiv{
+    width: 90rem;
+}
+
+.aboutContentdiv h5{
+    color:var(--color6);
+    margin-bottom: .4rem;
+}
+.aboutContentdiv h1{
+    color: #222;
+    font-weight: 600;
+    margin-bottom: .9rem;
+}
+.aboutContentdiv p{
+    margin-bottom: 1rem;
+    line-height: 30px;
+}
+
+.section_descriptionx{
+    color: #7c8a97;
+    font-size: .9rem;
+    line-height: 30px;
+    padding: 1rem 3rem;
+}
+
+.wrapper {
+    margin-top: 8rem;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.item {
+    background: #F2F2F2;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.titledown {
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ri-arrow-up-wide-line, .ri-arrow-down-wide-fill{
+    transform: .8s;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background: #dddddd;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+
+
+.contentdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .8s ease;
+    color: #222; 
+}
+
+.contentdown.show {
+    max-height: 1000px; /* قيمة كبيرة كافية لاستيعاب المحتوى */
+    transition: max-height 1.5s ease;
+}
+
+@media screen and (max-width:1115px){
+    .AboutSection{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    
+}
+@media screen and (max-width:890px){
+    .flexdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  
+        column-gap: 5rem;
+    }
+    .aboutContentdiv{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:510px){
+    /*.AboutSection{
+        margin-top: 25rem;
+    }*/
+    .imgdiv img{
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:390px){
+    .AboutSection{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .imgdiv img{
+        width: 250px;
+    }
+}

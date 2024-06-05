@@ -1,0 +1,140 @@
+.car_img{
+  text-align: center;
+  padding: 15px;
+}
+.car_img img{
+  width: 280px;
+  height: 150px;
+
+}
+.caritemx{
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.car_item{
+  border: 1px solid #D5D5D5;
+  border-radius: 6px;
+}
+.car_item-content{
+  text-align: center;
+}
+.car_item-content h4{
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: .5rem;
+}
+.car_item-content h6{
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.car_item-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.car_item-info span{
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+  background: #D5D5D5;
+  padding: .4rem .6rem;
+  border-radius: 30px;
+  color: #222;
+}
+
+.buttonItem{
+  text-align: center;
+  margin-bottom: .8rem;
+}
+
+.buttonItem a{
+  width: 100%;
+}
+
+.buttonItem button{
+  outline: none;
+  border: none;
+  background: #222;
+  padding: .6rem 1.2rem;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  width: 50%;
+  transition: .2s ease-in;
+  cursor: pointer;
+}
+.buttonItem button:hover{
+  background: var(--color1);
+}
+
+@media screen and (max-width:1140px){
+  .caritemx{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+  }
+}
+@media screen and (max-width:980px){
+  .caritemx{
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+  }
+}
+
+@media screen and (max-width:750px){
+  .caritemx{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: .8rem;
+  }
+}
+
+@media screen and (max-width:640px){
+  .caritemx{
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    gap: .8rem;
+  }
+}
+
+@media screen and (max-width:325px){
+  .car_img img{
+    width: 230px;
+    height: 100px;
+  }
+  .car_item-content h4{
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .car_item-content h6{
+    font-weight: 500;
+    font-size: .8rem;
+  }
+  .car_item-info span{
+    padding: .4rem .6rem;
+    font-size: .7rem;
+  }
+  .buttonItem button{
+    padding: .4rem 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 45%;
+  }
+  .caritemx{
+    display: grid;
+    grid-template-columns: repeat(1, 250px);
+    gap: 1.5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+  .car_item{
+    border: none;
+  }
+}

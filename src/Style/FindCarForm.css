@@ -1,0 +1,280 @@
+.hero-section{
+    position: relative;
+    z-index: 10;
+}
+
+.hero-form{
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 20px 1px rgb(34, 34, 34, 0.5);
+    position: absolute;
+    top: 23rem;
+    background: #fff;
+    margin: 0 9rem;
+
+}
+
+.row-form{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.left-dev{
+    background: linear-gradient(rgb(24, 121, 202, 0.5),rgb(24, 121, 202, 0.5)), url(../Assets/all-images/toyota-offer-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7.5rem 2.8rem;
+}
+.left-dev h2{
+    color: #fff;
+}
+
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+
+.icon-label{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.icon-label i, .icon-label label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.icon-label label span{
+    color: rgba(255, 0, 0, 0.7);
+    font-size: 1rem;
+}
+
+.form-group input{
+    border: 1px solid #2c2a2ac4;
+    outline: none;
+    width: 80%;
+    padding: .6rem 2.1rem;
+    border-radius: 2px;
+    color: #2c2a2ac4;
+}
+
+.form-group select{
+    border: 1px solid #2c2a2ac4;
+    outline: none;
+    width: 80%;
+    padding: .54rem 2rem;
+    border-radius: 2px;
+    color: #2c2a2ac4;
+}
+
+.form-group .btn-form{
+    margin-top: 1.7rem;
+    border: 1px solid #2c2a2ac4;
+    outline: none;
+    width: 80%;
+    padding: .55rem 2rem;
+    border-radius: 2px;
+    color: #fff;
+    background: var(--color1);
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1.2rem;
+    box-shadow: 5px 10px 20px 0px rgba(24, 122, 202, 0.4);
+    transition: .2s ease-in;
+}
+
+.form-group .btn-form:hover{
+    box-shadow: 5px 10px 20px 0px rgba(24, 122, 202, 0.6);
+}
+
+
+/*.journey_time_up::before{
+    content: 'Journey Time Up  '; /* b7al place holder katb9a fix */
+    /*margin-right: .6rem;
+    color: #2c2a2ac4;
+}*/
+
+
+@media screen and (max-width:1125px){
+    .hero-form{
+        position: absolute;
+        top: 22rem;
+        margin: 0 4rem;
+    
+    }
+    .left-dev{
+        padding: 6.5rem 2.8rem;
+    }
+    
+}
+@media screen and (max-width:1000px){
+    .hero-form{
+        position: absolute;
+        top: 22rem;
+        margin: 0 0rem;
+    
+    }
+    .left-dev{
+        padding: 6.5rem 2.8rem;
+    }
+}
+
+@media screen and (max-width:900px){
+    .hero-form{
+        position: absolute;
+        top: 16rem;
+        margin: 0 1rem;
+    }
+    .left-dev{
+        padding: 10rem 2.5rem;
+    }
+    .form-group input{
+        width: 70%;
+        padding: .6rem 2.1rem;
+    }
+    .form-group select{
+        width: 70%;
+        padding: .54rem 2rem;
+    }
+    .form-group .btn-form{
+        margin-top: 1.7rem;
+        width: 70%;
+        padding: .55rem 2rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    .form{
+        display: grid;
+        grid-template-columns: repeat(2, 220px);
+    }
+    
+}
+@media screen and (max-width:700px){
+    .left-dev{
+        display: none;
+    }
+    .form{
+        padding-left: 50px;
+        padding-right: 0;
+    }
+    .hero-form{
+        position: absolute;
+        top: 22rem;
+        margin: 0 0;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+@media screen and (max-width:510px){
+    .SolveErorr{
+        height: 40vh;
+    }
+    .form{
+        display: grid;
+        grid-template-columns: repeat(1, 250px);
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .form-group{
+        text-align: center;
+    }
+    .icon-label{
+        justify-content: center;
+        text-align: start;
+    }
+    
+}
+@media screen and (max-width:309px){
+    .hero-form{
+        position: absolute;
+        top: 22rem;
+        margin: 0 0rem;
+        padding-left: 0;
+        /*flex-wrap: wrap;*/
+        width: 100%;
+
+    }
+    .form{
+        display: grid;
+        grid-template-columns: repeat(1, 250px);
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .form-group{
+        text-align: center;
+    }
+    .icon-label{
+        justify-content: center;
+        text-align: start;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media screen and (max-width:322px){
+    .hero-form{
+        position: absolute;
+        top: 22rem;
+        margin: 0 0rem;
+        padding-left: 3rem;
+        padding-right: 0rem;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+@media screen and (max-width:290px){
+    .hero-form{
+        position: absolute;
+        top: 22rem;
+        margin: 0 0rem;
+        padding-left: 1rem;
+        padding-right: 0rem;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .form-group input{
+        width: 100%;
+        padding: .6rem 2rem;
+    }
+    .form-group select{
+        width: 100%;
+        padding: .54rem 2rem;
+    }
+    .form-group .btn-form{
+        margin-top: 0rem;
+        width: 100%;
+        padding: .55rem 2rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    
+}*/

@@ -1,0 +1,66 @@
+.services{
+    margin-bottom: 2rem;
+}
+.itemX{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+
+.servx{
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 3rem;
+}
+
+.itemX span{
+    display: inline-block;
+    margin-bottom: .6rem;
+}
+
+.itemX i{
+    color: var(--color1);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.itemX h6{
+    font-weight: 500;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+.itemX h6:hover{
+    color: var(--color2);
+}
+
+@media screen and (max-width:980px){
+    .servx{
+        grid-template-columns: repeat(2, 320px);
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width:630px){
+    .servx{
+        grid-template-columns: repeat(2, 320px);
+        column-gap: 0px;
+        row-gap: 25px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .servx{
+        grid-template-columns: repeat(1, 420px);
+        column-gap: 0px;
+        row-gap: 25px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .servx{
+        grid-template-columns: repeat(1, 300px);
+        row-gap: 25px;
+    }
+}

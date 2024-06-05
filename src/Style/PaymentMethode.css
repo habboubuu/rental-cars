@@ -1,0 +1,50 @@
+.booking-payment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part2book{
+    margin-right: 2rem;
+}
+.payment{
+    margin-bottom: 1rem;
+}
+.payment label{
+    color: rgb(19, 23, 87);
+    font-weight: 500;
+}
+.payment-1 p{
+    width: 80%;
+}
+.master-card{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+.paypal{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+.btnbookform{
+    font-size: 1rem;
+    font-weight: 600;
+}
+@media screen and (max-width:1060px){
+    .booking-payment{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:419px){
+    .master-card{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 5px;
+
+    }
+}

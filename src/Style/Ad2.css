@@ -1,0 +1,82 @@
+.Ad2{
+    background: linear-gradient(rgb(34, 34, 34, 0.1), rgb(34, 34, 34, 0.1)), url('../Assets/all-images/book-banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+}
+.ad2-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+.ad2-content h1{
+    font-size: 2rem;
+    color: #fff;
+}
+.ad2-content span{
+    font-size: 2rem;
+    color: var(--color6);
+    font-weight: 500;
+}
+.ad2-content span i{
+    font-size: 2.4rem;
+}
+@media screen and (max-width:900px){
+    .ad2-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ad2-content span{
+        font-size: 2rem;
+        color: #f76e13;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width:600px){
+    .ad2-content h1{
+        font-size: 1.5rem;
+    }
+    .ad2-content span{
+        font-size: 1.4rem;
+        color: #f76e13;
+        font-weight: 600;
+    }
+    .ad2-content span i{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width:450px){
+    .ad2-content h1{
+        font-size: 1.2rem;
+    }
+    .ad2-content span{
+        font-size: 1rem;
+        color: #f76e13;
+        font-weight: 600;
+    }
+    .ad2-content span i{
+        font-size: 1rem;
+    }
+    .Ad2{
+        padding: 40px 0;
+    }
+}
+@media screen and (max-width:365px){
+    .ad2-content h1{
+        font-size: .86rem;
+    }
+    .ad2-content span{
+        font-size: .6rem;
+        color: #f76e13;
+        font-weight: 600;
+    }
+    .ad2-content span i{
+        font-size: .6rem;
+    }
+    .Ad2{
+        padding: 30px 0;
+    }
+}

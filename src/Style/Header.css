@@ -1,0 +1,296 @@
+/* ==================== HEADER TOP =============== */
+.header_top{
+    padding: 6px 0;
+    background: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header_call{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.header_call p{
+    font-weight: 500;
+    color: #000;
+}
+.header_call .phonenum{
+    text-decoration: underline;
+}
+.header_call i{
+    background: #fff;
+    color: black;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+.header_email{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.header_email p{
+    font-weight: 500;
+    text-decoration: underline;
+    color: #000;
+}
+.header_email i{
+    background: #fff;
+    color: black;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+.header_socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+.header_socialmedia i{
+    text-align: center;
+    background: #fff;
+    color: black;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+/* ==================== HEADER MIDDELE =============== */
+.header_middele{
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    position: relative;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    color: #fff;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+.hm-place{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+.hm-place .ri-earth-line{
+    font-size: 3rem;
+    color: rgb(250, 250, 250);
+}
+.hm-place h6,p{
+    color: #fff;
+    font-weight: 400;
+}
+.menu-icon{
+    display: none;
+}
+
+/*=== Mobile Navbar ===*/
+.menu-icon i{
+    transition: .2s;
+    padding: 4px 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.menu-icon i:hover{
+    border: 1px solid #fff;
+    background: var(--color1);
+}
+.mobile-navbar{
+    background: #fff;
+    width: 40%;
+    height: 100%;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 9999;
+    transition: all 0.5s ease-in-out;
+}
+.mobile_close{
+    background: #fff;
+    width: 40%;
+    height: 100%;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    inset: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
+    box-shadow: 0px 0px 2px 2px  rgb(0, 0, 0, 0.3);
+
+}
+.icon-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 4rem;
+    margin-bottom: 4rem;
+}
+.icon-logo img{
+    height: 60px;
+    width: 50px;
+}
+.icon-logo i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .2s;
+}
+.icon-logo i:hover{
+    rotate: 180deg;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.mobile-list ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+}
+.mobile-list ul li{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+.mobile-list ul a{
+    font-size: 1.4rem;
+}
+.mobile-list ul a:hover{
+    color: var(--color1);
+}
+
+.overlay{
+    position: fixed;
+    inset: 0; /* !! */ /* katkhadmu */
+    background: #000000;
+    opacity: 0; /* mostawa chafafiya */
+    pointer-events: none; /* !! */  /* kaykhali effect dyal bars */
+    transition: 0.3s ease;
+    z-index: -11;
+
+}
+
+.overlayx{
+    position: fixed;
+    inset: 0; /* !! */ /* katkhadmu */
+    background: #000000;
+    transition: 0.25s ease;
+    z-index: -99;
+    opacity: 0.7; /* mostawa chafafiya */
+    /*pointer-events: all; /* /* makayb9ach ymkn ytla3 lpointer f jiha dyal overlay */
+    height: 100%;
+
+}
+
+
+
+/*========= responsive header ============*/
+
+@media screen and (max-width:1115px){
+    .header_middele .hm-place{
+        display: none;
+    }
+    .header_top{
+        display: none;
+    }
+}
+
+@media screen and (max-width:850px){
+    .header_middele .Navbar{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .logo h6{
+        display: none;
+    }
+    .mobile-navbar{
+        display: block;
+    }
+}
+
+@media screen and (max-width:730px){
+    .mobile_close{
+        width:50%
+    }
+}
+@media screen and (max-width:520px){
+    .mobile_close{
+        width: 100%;
+    }
+}
+
+
+.Navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 15px;
+}
+.Navbar-list{
+    padding: 8px 0;
+}
+.Navbar-list ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.Navbar-list a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-bottom: none;
+    padding: 6px 15px;
+    transition: .1s;
+}
+.Navbar-list ul a:hover{
+    border-bottom: 2px solid var(--color1);
+}
+.register{
+    display: flex;
+    column-gap: 10px;
+}
+.register button{
+    all:unset;
+    cursor: pointer;
+}
+.register .getstarted{
+    color: #fff;
+    border: 1px solid #fff;
+    background: #222;
+    padding: 10px 14px;
+    font-weight: 500;
+    transition: .2s;
+}
+.register .getstarted:hover{
+    color: var(--color1);
+    border: 1px solid var(--color1);
+}
+.register .signin{
+    color: #fff;
+    padding: 10px 14px;
+    font-weight: 500;
+    transition: .2s;
+}
+.register .signin:hover{
+    color: var(--color1);
+}

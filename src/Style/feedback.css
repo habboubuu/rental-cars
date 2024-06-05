@@ -1,0 +1,93 @@
+.feedbackParent{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+}
+.testSlider{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.testimonial{
+    padding: 1rem 1rem;
+}
+
+.testimonial p{
+    width: 80%;
+}
+
+.feedback-people{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.imgfeedback{
+    margin-top: 1rem;
+}
+.imgfeedback img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.feedbackname{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.feedbackname h6{
+    font-size: 1rem;
+    font-weight: 450;
+    color: #222;
+}
+.feedbackname p{
+    margin-bottom: -1rem;
+}
+
+
+@media screen and (max-width:675px){
+    .feedbackParent{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .imgfeedback img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+}
+
+@media screen and (max-width:575px){
+    .feedbackParent{
+        margin-left: 1.8rem;
+        margin-right: 1.8rem;
+    }
+    .testimonial p{
+        width: 100%;
+        text-align: center;
+    }
+    .feedback-people{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgfeedback img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .feedbackname h6{
+        font-size: .8rem;
+        font-weight: 400;
+        color: #222;
+    }
+    .feedbackname p{
+        font-size: .7rem;
+        margin-bottom: -1rem;
+    }
+    
+}

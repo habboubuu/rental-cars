@@ -1,0 +1,124 @@
+.contact{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.formxx{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+}
+.contact_form h6{
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.contact_form span{
+    color: rgb(228, 39, 39);
+    font-size: 1rem;
+}
+.contact_form input{
+    border: none;
+    outline: none;
+    background: #F2F2F2;
+    padding: 1rem 2rem;
+    width: 500px;
+}
+.contact_form textarea{
+    border: none;
+    outline: none;
+    background: #F2F2F2;
+    padding: 1rem 2rem;
+    width: 500px;
+    height: 150px;
+}
+.btnContact{
+    border: none;
+    outline: none;
+    margin-top: 1.2rem;
+    padding: 1rem 2rem;
+    background: var(--color1);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 5px 10px 0px #3e8bca98;
+    transition: .2s ease-in;
+}
+.btnContact:hover{
+    box-shadow: 1px 5px 10px 0px #3e8bca;
+}
+.btnContact span{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.btnContact i{
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+.more-information{
+    width: 30%;
+}
+.info-itemss h1{
+    margin-bottom: 1.5rem;
+}
+.info-itemss p{
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+.info-iconss{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.info-iconss i{
+    font-size: 1.2rem;
+    margin-right: 5px;
+    font-weight: 500;
+}
+.info-iconss span{
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.info-iconss span:hover{
+    color: var(--color1);
+}
+
+@media screen and (max-width:900px){
+    .formxx{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .more-information{
+        width: 100%;
+    }
+}
+@media screen and (max-width:550px){
+    .contact{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .contact_form input{
+        width: 100%;
+    }
+    .contact_form textarea{
+        width: 100%;
+        height: 150px;
+    }
+    .btnContact{
+        width: 100%;
+    }
+    .btnContact span{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .btnContact i{
+        font-size: 1rem;
+        margin-right: 5px;
+    }
+}

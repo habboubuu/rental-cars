@@ -1,0 +1,4 @@
+npm install remixicon --save
+npm install react-router-dom
+npm install slick-carousel
+npm install react-slick

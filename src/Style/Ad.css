@@ -1,0 +1,40 @@
+.Ad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    background: #222;
+}
+.ad-content{
+    padding: 4rem 0;
+    text-align: center;
+}
+.ad-content h1{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+.ad-content h4{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.ad-content span{
+    color: var(--color6);
+}
+
+@media screen and (max-width:800px){
+    .ad-content h1{
+        color: #fff;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1.4rem;
+    }
+    .ad-content h4{
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+}

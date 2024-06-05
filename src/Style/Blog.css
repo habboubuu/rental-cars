@@ -1,0 +1,45 @@
+.Blogsection{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+
+}
+.blogs6{
+    display: grid;
+    grid-template-columns: repeat(3, 361px);
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media screen and (max-width:1140px){
+    .blogs6{
+        grid-template-columns: repeat(3,300px);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .blogs6{
+        grid-template-columns: repeat(1,500px);
+        gap: 20px;
+    }
+}
+@media screen and (max-width:540px){
+    .blogs6{
+        grid-template-columns: repeat(1,350px);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:390px){
+    .blogs6{
+        grid-template-columns: repeat(1,280px);
+        gap: 20px;
+    }
+}
+@media screen and (max-width:300px){
+    .blogs6{
+        grid-template-columns: repeat(1,230px);
+        gap: 20px;
+    }
+}
