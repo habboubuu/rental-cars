@@ -80,15 +80,15 @@ const Header = () => {
 
             <div className='mobile-list'>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/cars">Cars</Link></li>
-                    <li><Link to="/blogs">News</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/" onClick={Toggle}>Home</Link></li>
+                    <li><Link to="/about" onClick={Toggle}>About</Link></li>
+                    <li><Link to="/cars" onClick={Toggle}>Cars</Link></li>
+                    <li><Link to="/blogs" onClick={Toggle}>News</Link></li>
+                    <li><Link to="/contact" onClick={Toggle}>Contact</Link></li>
                 </ul>
             </div>
         </div>
-        <div className={Over ? "overlay" : "overlayx"}></div>
+        <div className={Over ? "overlay" : "overlayx"} onClick={Toggle}></div>
       </div>
     </nav>
   )

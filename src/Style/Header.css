@@ -190,7 +190,7 @@
     inset: 0; /* !! */ /* katkhadmu */
     background: #000000;
     transition: 0.25s ease;
-    z-index: -99;
+    z-index: 99;
     opacity: 0.7; /* mostawa chafafiya */
     /*pointer-events: all; /* /* makayb9ach ymkn ytla3 lpointer f jiha dyal overlay */
     height: 100%;
